@@ -1,5 +1,6 @@
 package com.cydeo.day3;
 
+import com.cydeo.utilities.SpartanTestBase;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;
@@ -10,7 +11,7 @@ import java.util.List;
 import static io.restassured.RestAssured.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class SpartanTestsWithPath {
+public class SpartanTestsWithPath extends SpartanTestBase {
 
      /*
      Given accept type is json
@@ -73,7 +74,7 @@ public class SpartanTestsWithPath {
         String name = response.path("name[0]");
         System.out.println("name = " + name);
 
-        String lastFirstName = response.path("name[-2]");
+        String lastFirstName = response.path("name[-1]");
         System.out.println("lastFirstName = " + lastFirstName);
 
         //save names inside the list of string
