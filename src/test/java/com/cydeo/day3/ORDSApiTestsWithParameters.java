@@ -60,7 +60,6 @@ public class ORDSApiTestsWithParameters {
 
         assertEquals(200, response.statusCode() );
         assertEquals("application/json", response.header("Content-Type"));
-
         assertTrue(response.body().asString().contains("IT_PROG"));
 
         response.prettyPrint();
