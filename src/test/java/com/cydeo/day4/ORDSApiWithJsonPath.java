@@ -8,7 +8,6 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import java.util.List;
 
 import static io.restassured.RestAssured.*;
@@ -64,8 +63,5 @@ public class ORDSApiWithJsonPath extends HRTestBase {
         System.out.println("kingFirstName = " + kingFirstName);
         System.out.println("kingNameWithPathMethod = " + kingNameWithPathMethod);
 
-
-
     }
-
 }
